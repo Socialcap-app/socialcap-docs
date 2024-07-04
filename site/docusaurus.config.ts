@@ -29,6 +29,31 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous'
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@500&display=swap',
+        rel: 'stylesheet'
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -61,7 +86,8 @@ const config: Config = {
       title: ':',
       logo: {
         alt: 'Socialcap Logo',
-        src: 'img/socialcap_logotype.svg'
+        src: 'img/socialcap_logotype.svg',
+        srcDark: 'img/socialcap_logotype_dark.svg',
       },
       items: [
         {

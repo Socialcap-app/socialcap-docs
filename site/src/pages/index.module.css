@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 @media screen and (max-width: 996px) {
@@ -21,3 +22,113 @@
   align-items: center;
   justify-content: center;
 }
+
+.fiveMinutesTitle{
+  font-weight: 600;
+}
+
+/* STYLES FOR HEADER SOCIALCAP DOCS */
+
+.zIndexTen{
+  z-index: 10;
+}
+
+.container{
+  /* relative flex overflow-hidden m-auto w-full */
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+}
+
+.square {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #d6e6ff61;
+  border-radius: 15%;
+  z-index: 0;
+}
+.one {
+  right: 10%;
+  top: 0;
+  transform: rotateZ(45deg);
+}
+.oneMobile {
+  /*'top-20 right-0 rotate-45' */
+  top: 5rem;
+  right: -5rem;
+  transform: rotateZ(45deg);
+}
+.two {
+  width: 100px;
+  height: 100px;
+  right: 85%;
+  top: 50%;
+  transform: rotateZ(65deg);
+}
+.twoMobile {
+  /* 'top-60 right-80 rotate-45' */
+  top: 15rem;
+  right: 15rem;
+  transform: rotateZ(55deg);
+}
+.three {
+  right: 55%;
+  top: 60%;
+  transform: rotateZ(35deg);
+}
+.threeMobile {
+  /* 'bottom-60 right-0 rotate-45' */
+  bottom: 15rem;
+  left: -10rem;
+  transform: rotateZ(75deg);
+}
+
+/* EXTRA CSS */
+
+:root {
+  font-family: Inter;
+  line-height: 1.5;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* 
+@font-face {
+  font-family: "WixMadeforDisplayBold";
+  src: local("WixMadeforDisplay-Bold"),
+    url("./fonts/WixMadeforDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "WixMadeforDisplayExtraBold";
+  src: local("WixMadeforDisplay-ExtraBold"),
+    url("./fonts/WixMadeforDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlbertSans-Black";
+  src: local("AlbertSans-Black"),
+    url("./fonts/AlbertSans-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AlbertSans-Regular";
+  src: local("AlbertSans-Regular"),
+    url("./fonts/AlbertSans-Regular.ttf") format("truetype");
+} */
