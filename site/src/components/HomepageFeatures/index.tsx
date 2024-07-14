@@ -1,13 +1,15 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import BlueHero from '@site/static/img/BlueHero.png';
+import PinkHero from '@site/static/img/PinkHero.png';
+import RedHero from '@site/static/img/RedHero.png';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  imgSrc: string;
   description: JSX.Element;
 };
-
 
 const FeatureList: FeatureItem[] = [
   // {
@@ -21,7 +23,7 @@ const FeatureList: FeatureItem[] = [
   // },
   {
     title: 'Power up your community',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imgSrc: BlueHero,
     description: (
       <>
         Supercharge your community's potential by leveraging the collective 
@@ -31,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Build Social Consensus',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    imgSrc: PinkHero,
     description: (
       <>
         Ensure that every decision reflects the collective will with multiple 
@@ -41,7 +43,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Fuel Engagement, Foster Growth',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imgSrc: RedHero,
     description: (
       <>
         Utilize rigorously validated credentials to reshape community interaction.
@@ -50,11 +52,11 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, imgSrc, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imgSrc} alt='Demostration' className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import Footer from './src/components/CustomFooter/CustomFooter';
 
 const config: Config = {
   title: 'Socialcap Docs',
@@ -120,7 +121,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
@@ -129,7 +130,7 @@ const config: Config = {
               label: 'Introduction',
               to: '/docs/intro',
             },
-          ],
+          ]
         },
         {
           title: 'Community',
@@ -163,6 +164,7 @@ const config: Config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Socialcap Team, Built with Docusaurus.`,
+      /* className: 'footer__links', */
     },
     prism: {
       theme: prismThemes.github,
