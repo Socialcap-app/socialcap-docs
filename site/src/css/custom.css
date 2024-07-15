@@ -40,12 +40,13 @@
 }
 
 .footer {
-  background-color: var(--footer-bg-color);
-  color: var(--footer-text-color);
+  /* background-color: var(--footer-bg-color);
+  color: var(--footer-text-color); */
+  /* border: 1px solid cadetblue; */
 }
 
 .footer__links {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer__links ul {
@@ -53,9 +54,9 @@
   padding: 0;
 }
 
-.footer__links ul li {
+/* .footer__links ul li {
   margin: 0.5em 0;
-}
+} */
 
 .footer__links ul li a {
   display: inline-block;
